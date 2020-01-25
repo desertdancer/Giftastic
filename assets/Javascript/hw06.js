@@ -1,5 +1,5 @@
 // buttons by default showing ont the html
-var topics = ["singing in the rain", "carousel", "seven brides for seven brothers", "the cdbirdcage"]
+var topics = ["Singing In the Rain", "The Music Man", "Seven Brides for Seven Brothers", "The Birdcage", "The Thin Man", "Notting Hill", "Firefly", "Bringing Up Baby", "Desk Set", "Avatar", "The King's Speech", "Philadelphia Story", "High Society", "When Harry Met Sallyt"]
 
 // onclick for the submit button id search
 // read the input content
