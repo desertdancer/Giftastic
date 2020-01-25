@@ -1,0 +1,30 @@
+
+
+.container{
+    margin-top: 20px;;
+}
+#results {
+    margin-top: 20px;
+
+}
+img{
+    width: 300px;
+    height: 200px; 
+    
+}
+.area{ 
+    margin-bottom: 20px;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+}
+#topics{
+    margin-bottom: 40px;
+}
+button{
+    font-weight: bold;
+    background-color: rgb(128, 34, 151);
+    color: white;
+    margin: 10px;
+}

@@ -1,5 +1,5 @@
 // buttons by default showing ont the html
-var topics = ["singing in the rain", "carousel", "seven brides for seven brothers"]
+var topics = ["singing in the rain", "carousel", "seven brides for seven brothers", "the cdbirdcage"]
 
 // onclick for the submit button id search
 // read the input content
@@ -46,7 +46,7 @@ function renderButtons() {
 function search(topic) {
 
     var apikey = "SJyMqFrQCwrsGYbYgq51PuaCAIPJX0JN"
-    var query = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + apikey
+    var query = "https://api.giphy.com/v1/gifs/search?q=" + topic + "&api_key=" + apikey +"&limit=12"
     console.log(query)
     $.ajax({
         url: query,
@@ -62,8 +62,12 @@ function search(topic) {
 function showGif(data){
     $("#results").empty()
         for (var i=0; i<data.length; i++){
+            var pic=$("<div class='area col'>")
+            var rating="<p>Rating: "+data[i].rating+"</p>"
+            pic.append(rating)
             var image = "<img class='gif' src="+ data[i].images.fixed_height_still.url + " src-alt=" + data[i].images.fixed_height.url + ">"
-            $("#results").append(image)
+            pic.append(image)
+            $("#results").append(pic)
         }
     $(".gif").on("click", function(){
         var tempSRC = $(this).attr("src")
