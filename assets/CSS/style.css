@@ -2,7 +2,13 @@
 
 .container{
     margin-top: 20px;;
+    background-color: lightskyblue; 
 }
+h1 {
+    font-style: italic;
+    font-family: cursive; 
+    }
+
 #results {
     margin-top: 20px;
 
